@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image:  radial-gradient(#f4f5f5, #288ce3 );
+    background-image: radial-gradient(#f4f5f5, #288ce3);
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -8,7 +8,7 @@ body {
     justify-content: center;
 }
 
-h1{
+h1 {
     color: #fff;
     text-shadow: 2px 2px 1px #000000;
 }
@@ -23,11 +23,11 @@ form {
     box-shadow: 1 1 10px rgba(202, 58, 58, 0.1);
 }
 
-#size{
+#size {
     margin: 20px 0;
 }
 
-#smoothieForm > label:nth-child(1){
+#smoothieForm>label:nth-child(1) {
     font-size: 40px;
     color: #0fe407;
     /*add some shadow */
@@ -36,8 +36,8 @@ form {
 }
 
 
-#cup-size + label,
-.ingredient-option + label {
+#cup-size+label,
+.ingredient-option+label {
     font-size: 20px;
     color: #bc24af;
     /*add some shadow */
@@ -79,7 +79,7 @@ form {
     border-radius: 50%;
 }
 
-.ingredient-option > label {
+.ingredient-option>label {
     align-items: self-start;
     font-size: 20px;
 }
@@ -88,7 +88,7 @@ form {
     content: "🍹";
     margin-right: 10px;
     transition: 0.5s ease-in-out;
-    
+
 }
 
 #orderButton {

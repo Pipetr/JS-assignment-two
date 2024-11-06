@@ -64,7 +64,7 @@ class Smoothie {
         //Generate image of smoothie cup
         const cup = document.createElement('img');
         // Set the image of the cup based on the size of the smoothie
-        let cupImage;        
+        let cupImage;
         //set the IMG size according to Coffee size
         let cupSize;
         console.log(size);
@@ -125,7 +125,7 @@ document.getElementById('orderButton').addEventListener('click', () => {
         spinach: parseInt(document.querySelector('[name="spinach"]').value),
         blueberry: parseInt(document.querySelector('[name="blueberry"]').value),
     };
-    
+
     const smoothie = new Smoothie(size, ingredients, sweetness);
 
     // Display order summary and cost
