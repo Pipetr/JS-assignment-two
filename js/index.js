@@ -24,6 +24,11 @@ class Smoothie {
       }
       return cost.toFixed(2);
     }
+
+    // Generate description of the smoothie
+    description() {
+        return `You ordered a ${this.size} smoothie with ${this.ingredients.join(', ')} at sweetness level ${this.sweetness}.`;
+    }
   
     // Generate nutritional information based on ingredients
     calculateNutrition() {
