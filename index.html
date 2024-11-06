@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smoothie Machine</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Order Your Smoothie</h1>
+  <form id="smoothieForm">
+    <label for="size">Size:</label>
+    <select id="size" name="size">
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
+    </select>
+
+    <label for="ingredients">Choose Ingredients:</label>
+    <select id="ingredients" name="ingredients" multiple>
+      <option value="banana">Banana</option>
+      <option value="strawberry">Strawberry</option>
+      <option value="mango">Mango</option>
+      <option value="spinach">Spinach</option>
+      <option value="blueberry">Blueberry</option>
+    </select>
+
+    <label for="sweetness">Sweetness Level:</label>
+    <input type="range" id="sweetness" name="sweetness" min="1" max="5" value="3">
+
+    <button type="button" id="orderButton">Order Smoothie</button>
+  </form>
+
+  <div id="output"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
