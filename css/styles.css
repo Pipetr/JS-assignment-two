@@ -1,3 +1,4 @@
+/*body style*/
 body {
     font-family: Arial, sans-serif;
     background-image: radial-gradient(#f4f5f5, #288ce3);
@@ -7,12 +8,12 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+/*H1 style*/
 h1 {
     color: #fff;
     text-shadow: 2px 2px 1px #000000;
 }
-
+/*form style*/
 form {
     margin: 20px auto;
     padding: 20px;
@@ -120,7 +121,7 @@ form {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
+/*output style*/
 #output,
 #totalCost,
 #nutritionFacts {
