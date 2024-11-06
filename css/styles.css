@@ -1,29 +1,59 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
+    background-color: #f0f8ff;
     text-align: center;
   }
   
   form {
     margin: 20px auto;
     padding: 20px;
-    width: 300px;
+    width: 350px;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
   }
   
-  button {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #5cb85c;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  .ingredient-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
   }
   
-  button:hover {
-    background-color: #4cae4c;
+  .ingredient-option img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  #output, #totalCost, #nutritionFacts {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  #imageContainer img {
+    max-width: 200px;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Blending animation */
+  .blending-animation {
+    animation: blend 2s ease-in-out;
+  }
+  
+  @keyframes blend {
+    0% {
+      transform: scale(1);
+      filter: blur(0px);
+    }
+    50% {
+      transform: scale(1.1);
+      filter: blur(3px);
+    }
+    100% {
+      transform: scale(1);
+      filter: blur(0px);
+    }
   }
   
