@@ -1,59 +1,172 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
+    background-image:  radial-gradient(#f4f5f5, #288ce3 );
     text-align: center;
-  }
-  
-  form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: #fff;
+    text-shadow: 2px 2px 1px #000000;
+}
+
+form {
     margin: 20px auto;
     padding: 20px;
     width: 350px;
-    background: #fff;
+    /*Add center faded bacground color between yellow and white*/
+    background: linear-gradient(#e4b90c, #f0f8ff);
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
-  .ingredient-option {
+    box-shadow: 1 1 10px rgba(202, 58, 58, 0.1);
+}
+
+#size{
+    margin: 20px 0;
+}
+
+#smoothieForm > label:nth-child(1){
+    font-size: 40px;
+    color: #0fe407;
+    /*add some shadow */
+    text-shadow: 1px 1px 1px #970f0f;
+    margin-right: 10px;
+}
+
+
+#cup-size + label,
+.ingredient-option + label {
+    font-size: 20px;
+    color: #bc24af;
+    /*add some shadow */
+    text-shadow: 1px 1px 1px #970f0f;
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+#cup-size {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    align-items: center;
+    text-align: left;
+    color: #f57b00;
+    text-shadow: 1px 1px 1px #280f97;
+}
+
+#cup-size img {
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+}
+
+.ingredient-option {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 5px 0;
-  }
-  
-  .ingredient-option img {
-    width: 25px;
-    height: 25px;
-  }
-  
-  #output, #totalCost, #nutritionFacts {
+}
+
+.ingredient-option img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.ingredient-option > label {
+    align-items: self-start;
+    font-size: 20px;
+}
+
+#orderButton::before {
+    content: "🍹";
+    margin-right: 10px;
+    transition: 0.5s ease-in-out;
+    
+}
+
+#orderButton {
     margin-top: 20px;
+    padding: 10px 20px;
     font-size: 1.2em;
-    color: #333;
-  }
-  
-  #imageContainer img {
-    max-width: 200px;
+    background-color: #bc24af;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#orderButton::after {
+    content: "🍹";
+    margin-left: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+#orderButton:hover {
+    background-color: #e4b90c;
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+    text-shadow: 1px 1px 1px #bf3030;
+}
+
+#sweetness {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#output,
+#totalCost,
+#nutritionFacts {
+    margin-top: 20px;
+    font-size: 1.4em;
+    color: #e4b90c;
+    text-shadow: 2px 2px 1px #7302fd;
+}
+
+#imageContainer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#imageContainer img {
+    width: 200px;
+    height: 200px;
     margin-top: 20px;
     border-radius: 8px;
-  }
-  
-  /* Blending animation */
-  .blending-animation {
+}
+
+/* Blending animation */
+.blending-animation {
     animation: blend 2s ease-in-out;
-  }
-  
-  @keyframes blend {
+}
+
+
+.orderForm,
+.outputForm {
+    margin: 20px;
+}
+
+@keyframes blend {
     0% {
-      transform: scale(1);
-      filter: blur(0px);
+        transform: scale(1);
+        filter: blur(0px);
     }
+
     50% {
-      transform: scale(1.1);
-      filter: blur(3px);
+        transform: scale(1.1);
+        filter: blur(3px);
     }
+
     100% {
-      transform: scale(1);
-      filter: blur(0px);
+        transform: scale(1);
+        filter: blur(0px);
     }
-  }
-  
+}
